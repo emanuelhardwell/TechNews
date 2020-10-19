@@ -192,21 +192,30 @@ hr {
   width: 100%;
   height: 250px;
   background: rgb(34, 33, 33);
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .footer-container ul {
-  align-items: flex-start;
-  justify-content: center;
   margin: 0 auto;
 }
 
-.footer-container ul li{
+.footer-container ul li {
   line-height: 2;
+}
+
+/* footer  copyright*/
+.footer {
+  background: rgb(34, 33, 33);
+  color: rgb(238, 196, 196);
+  font-size: 15px;
+  text-align: center;
+  padding: 15px 0;
 }
