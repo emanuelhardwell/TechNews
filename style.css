@@ -189,8 +189,6 @@ hr {
 
 /* footer links */
 .footer-links {
-  width: 100%;
-  height: 250px;
   background: rgb(34, 33, 33);
   margin-top: 20px;
 }
@@ -219,3 +217,30 @@ hr {
   text-align: center;
   padding: 15px 0;
 }
+
+/* MEDIAS QUERY  @media */
+@media (max-width: 800px) {
+  body {
+    background: red;
+  }
+  /* menu */
+  .nav-main ul.nav-menu-left {
+    display: block;
+    position: absolute;
+    background: gray;
+    opacity: .5;
+    
+  }
+
+  .news-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content {
+    width: 80%;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} ;
