@@ -69,6 +69,14 @@ ul {
   margin-left: 20px;
 }
 
+.menu-btn {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  z-index: 2;
+  display: none;
+}
+
 hr {
   margin: 10px 0;
 }
@@ -219,17 +227,36 @@ hr {
 }
 
 /* MEDIAS QUERY  @media */
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   body {
     background: red;
   }
+
+  .menu-btn {
+    display: block;
+  }
+
+  /*  */
+  .nav-menu-right {
+    margin-right: 40px;
+  }
+
   /* menu */
   .nav-main ul.nav-menu-left {
     display: block;
     position: absolute;
-    background: gray;
-    opacity: .5;
-    
+    background: rgb(44, 43, 43);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 30px;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-main ul.nav-menu-left.show {
+    transform: translateX(-20px);
   }
 
   .news-cards {
